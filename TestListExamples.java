@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import org.junit.Test;
 
-public class TestListExamples implements StringChecker {
+public class TestListExamples  {
   // Write your grading tests here!
   @Test
   public void filterCorrectly() {
