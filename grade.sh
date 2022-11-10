@@ -1,4 +1,3 @@
-
 #Total student score out of 35
 TOTAL_SCORE=0
 
@@ -12,11 +11,17 @@ git clone $1 $STUDENT_DIR # names the repo $STUDENT_DIR
 
 cp $TESTNAME.java $STUDENT_DIR/ # the name of the test
 
+INNARDS=$(ls ./$STUDENT_DIR)
 # very bad case of a repo with just one subdirectory
-[[ -d $(ls) ]] && cd $(ls)
+if [[ -d ./$STUDENT_DIR/$INNARDS ]]; then
+	STUDENT_DIR=./$STUDENT_DIR/$INNARDS
+fi
 
-# wrong name fix, one file expected though
-[[ -f $(ls) ]] && mv $(ls) ListExamples.java
+
+## wrong name fix, one file expected though
+if [[ -f $(ls) ]]; then
+	mv $(ls) ListExamples.java
+fi
 
 
 
@@ -49,12 +54,13 @@ java -cp $CP org.junit.runner.JUnitCore $TESTNAME
 if [[ $? -eq 0 ]]; then
 	
 	# awarding them points
-	TOTAL_SCORE=$((TOTAL_SCORE + 5))
+	TOTAL_SCORE=$((TOTAL_SCORE + 35))
 
 fi
 
 
 
+# view tests
 
 
 
