@@ -1,6 +1,6 @@
 
 CP=".:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar"
-TESTNAME="TEST"
+TESTNAME="TestList"
 STUDENT_DIR="student-dir"
 
 rm -rf $STUDENT_DIR
