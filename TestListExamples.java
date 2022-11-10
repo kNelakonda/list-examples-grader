@@ -19,6 +19,7 @@ public class TestListExamples  {
     endList.add("1Hello");
     endList.add("1Are");
     assertEquals(endList,ListExamples.filter(i,wc));
+  }
 
     @Test
     public void correctOrderTest(){
