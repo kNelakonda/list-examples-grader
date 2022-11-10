@@ -7,10 +7,6 @@ import org.junit.Test;
 
 public class TestListExamples {
   // Write your grading tests here!
-
-
-
-
   @Test
   public void correctOrderTest(){
     List<String> list1 = new ArrayList<String>();
