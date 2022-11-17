@@ -14,8 +14,8 @@ public class TestListExamples  {
     i.add("We");
     i.add("1Are");
     i.add("Here");
-    StringChecker wc = new objChecker();
-    ListExamples.filter(i,wc);
+    ObjChecker wc = new ObjChecker();
+    ListExamples.filter(i, wc);
     endList.add("1Hello");
     endList.add("1Are");
     assertEquals(endList,ListExamples.filter(i,wc));
@@ -36,13 +36,4 @@ public class TestListExamples  {
       assertArrayEquals(expected, list3.toArray());
   }
 }
-class objChecker implements StringChecker{
 
-  public boolean checkString(String s){
-    if(Character.isDigit(s.charAt(0))){
-      return true;
-    }else{
-    return false;
-    }  
-  }
-}
