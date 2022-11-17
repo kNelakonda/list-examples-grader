@@ -8,16 +8,7 @@ class PluralChecker implements StringChecker{
       return s.endsWith("s");
   }
 }
-class ObjChecker implements StringChecker{
 
-  public boolean checkString(String s){
-    if(Character.isDigit(s.charAt(0))){
-      return true;
-    }else{
-    return false;
-    }  
-  }
-}
 class ListExamples {
 
   // Returns a new list that has all the elements of the input list for which
@@ -27,7 +18,7 @@ class ListExamples {
     List<String> result = new ArrayList<>();
     for(String s: list) {
       if(sc.checkString(s)) {
-        result.add(0, s);
+        result.add(s);
       }
     }
     return result;
