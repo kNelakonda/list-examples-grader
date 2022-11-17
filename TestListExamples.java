@@ -16,8 +16,8 @@ public class TestListExamples  {
     i.add("Here");
     ObjChecker wc = new ObjChecker();
     ListExamples.filter(i, wc);
-    endList.add("1Hello");
     endList.add("1Are");
+    endList.add("1Hello");
     assertEquals(endList,ListExamples.filter(i,wc));
   }
 
