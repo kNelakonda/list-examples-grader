@@ -1,4 +1,7 @@
-#Total student score out of 35
+# Total student score out of 35
+# If you can't find the purpose of something 
+#   feel free to ask for more help through discord @ProjectilePaco#8901
+
 TOTAL_SCORE=0
 
 
